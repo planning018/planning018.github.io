@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Zebra 分库分表实践</title>
+      <link href="/2020/03/26/zebra-fen-ku-fen-biao-shi-jian/"/>
+      <url>/2020/03/26/zebra-fen-ku-fen-biao-shi-jian/</url>
+      
+        <content type="html"><![CDATA[<h4 id="一、技术背景介绍"><a href="#一、技术背景介绍" class="headerlink" title="一、技术背景介绍"></a>一、技术背景介绍</h4><p>为了不涉及公司的业务细节，简单的说，就是为了解决 单张表数据量过大，以及单个库大小过大，项目组决定进行对某块业务进行分库分表的设计。</p><ol><li>使用 mybatis 写入 MySQL 数据库</li><li>使用开源组件 zebra 进行分库分表管理</li><li>使用 elastic job 进行数据全量迁移</li><li>使用 开源组件 Lion 进行配置项管理</li></ol><h4 id="二、迁移方案"><a href="#二、迁移方案" class="headerlink" title="二、迁移方案"></a>二、迁移方案</h4><p><img src="https://paper-picture.oss-cn-beijing.aliyuncs.com/img/20200316111402.png" alt=""></p><p>如上图所示，分为三个阶段：</p><ol><li>数据双写</li><li>全量迁移</li><li>数据稽核</li></ol><h4 id="三、demo-演示"><a href="#三、demo-演示" class="headerlink" title="三、demo 演示"></a>三、demo 演示</h4><p>这里先使用 zebra 官方的 demo 自己重新实现一下，项目中实际的使用基本与 demo 一致。</p><h4 id="四、其他"><a href="#四、其他" class="headerlink" title="四、其他"></a>四、其他</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Zebra </tag>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/03/05/hello-world/"/>
       <url>/2020/03/05/hello-world/</url>
